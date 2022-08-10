@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <ToastContainer position='bottom-center'/>
+        <ToastContainer position='top-center'/>
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/login' element={<Login />} />
