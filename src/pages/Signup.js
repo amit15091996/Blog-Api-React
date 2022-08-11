@@ -86,6 +86,7 @@ const Signup = () => {
           isError: true,
         });
       });
+      // return;
   };
 
   return (
