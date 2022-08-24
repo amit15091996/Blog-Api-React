@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Navigate, NavLink as ReactLink, useNavigate } from "react-router-dom";
+import { NavLink as ReactLink, useNavigate } from "react-router-dom";
 import {
   Collapse,
   Navbar,
@@ -83,13 +83,17 @@ const CustomNavBar = () => {
             {login && (
               <>
                 <NavItem>
-                  <NavLink tag={ReactLink} to="/user/profile">Profile</NavLink>
-                </NavItem>
-                <NavItem >
-                  <NavLink tag={ReactLink} to="/user/private">{user.email}</NavLink>
+                  <NavLink tag={ReactLink} to="/user/profile">
+                    Profile
+                  </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink  onClick={logout}>Logout</NavLink>
+                  <NavLink tag={ReactLink} to="/user/private">
+                    {user.email}
+                  </NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink onClick={logout}>Logout</NavLink>
                 </NavItem>
               </>
             )}

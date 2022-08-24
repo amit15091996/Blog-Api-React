@@ -66,7 +66,6 @@ const Login = () => {
           toast.success("login successful", {
             position: toast.POSITION.TOP_RIGHT,
           });
-          // navigate("/user/private");
         })
         .catch((error) => {
           console.log(error);
