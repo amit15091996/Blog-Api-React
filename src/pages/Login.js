@@ -59,6 +59,8 @@ const Login = () => {
             console.log("saved in local ");
 
             // redirect to dashboard
+
+            navigate("/user/private")
           });
 
           toast.success("login successful", {
