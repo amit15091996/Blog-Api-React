@@ -1,21 +1,16 @@
-import React from 'react'
-import Base from '../components/Base'
+import React from "react";
+import { Container } from "reactstrap";
+import Base from "../components/Base";
+import NewFeed from "../components/NewFeed";
 
 const Home = () => {
   return (
     <Base>
-        <h1>This is home page</h1>
-        <p>Welcome to home page</p>
-
-        <div className="container">
-            <div className="card">
-                <div className="card-body">
-
-                </div>
-            </div>
-        </div>
+      <Container>
+        <NewFeed />
+      </Container>
     </Base>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
