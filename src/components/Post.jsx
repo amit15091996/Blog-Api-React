@@ -1,5 +1,6 @@
 import React from "react";
-import { Button, Card, CardBody, CardText } from "reactstrap";
+import { Link } from "react-router-dom";
+import { Card, CardBody, CardText } from "reactstrap";
 
 const Post = ({
   post = { title: "default title", content: "default content" },
@@ -14,7 +15,9 @@ const Post = ({
           }}
         ></CardText>
         <div>
-          <Button>Read More</Button>
+          <Link className="btn btn-secondary" to={"/posts/" + post.postId}>
+            Read More
+          </Link>
         </div>
       </CardBody>
     </Card>
